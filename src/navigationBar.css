@@ -1,0 +1,103 @@
+.logo-center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo-image {
+  width: 64px;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 5px #61dafb);
+}
+
+.navbar-custom {
+  background-color: #0372e0;
+  transition: all 0.3s ease;
+  z-index: 1000; /* Ši reikšmė turi būti didesnė už bet kurį kitą jūsų puslapyje esantį z-index */
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.nav-left {
+  margin-left: 50px; /* Arba bet koks kitas norimas tarpumas */
+}
+
+.nav-link-custom {
+  color: #f8f9fa;
+  font-size: 18px;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block; /* Pridedame, kad būtų galima nustatyti šviesėjimo efektą */
+}
+
+.nav-link-custom:hover {
+  color: #61dafb;
+  transform: scale(1.2); /* Padidiname šiek tiek */
+}
+
+.greeting-text {
+  color: #f8f9fa;
+  font-size: 18px;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.greeting-text:hover {
+  color: #61dafb;
+}
+
+.special-offer {
+  color: red;
+  transition: color 0.3s ease;
+}
+
+.special-offer:hover {
+  color: #ff6666;
+}
+
+.search-form {
+  margin-right: 20px;
+}
+
+.language-switcher {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #343a40;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.language-switcher span {
+  margin: 0 5px;
+  color: #f8f9fa;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.language-switcher span:hover {
+  color: #61dafb;
+  transform: scale(1.1);
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+#language-selector a:hover {
+  text-decoration: underline;
+}

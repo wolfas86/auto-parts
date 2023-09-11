@@ -1,0 +1,100 @@
+.kategorija-title {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  transition: transform 0.3s, background-color 0.3s;
+  text-align: center;
+  width: fit-content;
+  position: fixed;         /* Fiksuojame poziciją */
+  top: 0;                  /* Viršuje */
+  left: 45%;               /* Centre horizontaliai */
+  
+  z-index: 1000;           /* Kad būtų virš kitų elementų */
+}
+
+
+
+.kategorija-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.kategorija-title:hover {
+  transform: scale(1.05);
+  background-color: #444;
+}
+
+.detale-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: flex-start; /* Norėdami pradėti iš viršaus */
+}
+
+.detale-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Arba priderinkite skaičių pagal poreikį */
+  gap: 20px;
+  padding: 0;
+  list-style-type: lower-latin;
+  justify-items: center;
+  width: 100%;
+}
+
+.detale-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 200px;
+}
+
+.detale-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.detale-img {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.detale-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.detale-list.has-details {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 0;
+  list-style-type: lower-latin;
+  justify-items: center;
+  width: 100%;
+}
+
+.no-details-message:hover {
+  background-color: #ddd; /* Šiek tiek tamsesnė spalva pelės užvedimo metu */
+}
+
+body {
+  background-color: #0080ff;
+  background-image: linear-gradient(to bottom, #0a5bac, #00bfff);
+  animation: seaAnimation 1s linear infinite;
+}
+
+@keyframes seaAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}

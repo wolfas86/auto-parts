@@ -1,0 +1,27 @@
+.scrolling-animation {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  animation: scrolling 15s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(+1600%);
+  }
+}
+
+.scrolling-animation img {
+  width: 100px;  /* fiksuotas paveikslėlio dydis */
+  height: 100px;
+  object-fit: cover;  /* užtikrina, kad paveikslėlis bus apkarpytas, o ne ištemptas */
+  transition: transform 0.3s ease-in-out;  /* perėjimo efektas */
+}
+
+.scrolling-animation img:hover {
+  transform: scale(1.1);  /* keičiamas dydis pele užvedus ant paveikslėlio */
+}

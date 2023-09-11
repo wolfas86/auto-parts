@@ -1,0 +1,80 @@
+.Navbar {
+  background-color: #343a40; /* Tamsus fonas */
+}
+
+.Navbar .nav-link {
+  color: #f8f9fa; /* Šviesus tekstas */
+}
+
+.Navbar .nav-link:hover {
+  color: #adb5bd; /* Pakeisti spalvą užvedus pelę */
+}
+
+body {
+  background-color: #f9f2e9;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content-container {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.detale-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.detale-item {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.Navbar {
+  background-color: #343a40; /* Tamsus fonas */
+}
+
+.Navbar .nav-link {
+  color: #f8f9fa; /* Šviesus tekstas */
+}
+
+.Navbar .nav-link:hover {
+  color: #adb5bd; /* Pakeisti spalvą užvedus pelę */
+}
+
+body {
+  background-color: #f9f2e9;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content-container {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.detale-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.detale-item {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
